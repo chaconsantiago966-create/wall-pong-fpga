@@ -1,0 +1,24 @@
+[*] Wall-Pong: configuracion de GTKWave para tb_control_velocidad
+[sst_width] 220
+[signals_width] 300
+[sst_expanded] 1
+[size] 1600 900
+@200
+-Entradas
+@28
+tb_control_velocidad.clk
+tb_control_velocidad.rst
+tb_control_velocidad.golpe
+tb_control_velocidad.gol
+@200
+-Contador de golpes (0..9)
+@24
+tb_control_velocidad.dut.cont_golpes[3:0]
+@28
+tb_control_velocidad.dut.decimo
+@200
+-Nivel (0..7, se satura)
+@28
+tb_control_velocidad.dut.nivel_max
+@24
+tb_control_velocidad.nivel[2:0]

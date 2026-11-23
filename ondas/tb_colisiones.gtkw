@@ -1,0 +1,31 @@
+[*] Wall-Pong: configuracion de GTKWave para tb_colisiones
+[sst_width] 220
+[signals_width] 300
+[sst_expanded] 1
+[size] 1600 900
+@200
+-Entradas
+@24
+tb_colisiones.pelota_x[3:0]
+tb_colisiones.pelota_y[3:0]
+@28
+tb_colisiones.dir_x
+tb_colisiones.dir_y
+@24
+tb_colisiones.pala_y[3:0]
+@200
+-Senales internas
+@28
+tb_colisiones.dut.choca_techo
+tb_colisiones.dut.choca_piso
+tb_colisiones.dut.choca_pared
+tb_colisiones.dut.llega_izq
+tb_colisiones.dut.en_paleta
+@200
+-Salidas
+@28
+tb_colisiones.reb_x
+tb_colisiones.reb_y
+tb_colisiones.gol
+[pattern_trace] 1
+[pattern_trace] 0

@@ -1,0 +1,33 @@
+[*] Wall-Pong: configuracion de GTKWave para tb_fisica_juego
+[sst_width] 220
+[signals_width] 300
+[sst_expanded] 1
+[size] 1600 900
+@200
+-Ticks
+@28
+tb_fisica_juego.tick
+tb_fisica_juego.tick_pala
+@200
+-Pelota
+@24
+tb_fisica_juego.pelota_x[3:0]
+tb_fisica_juego.pelota_y[3:0]
+@28
+tb_fisica_juego.dut.dir_x
+tb_fisica_juego.dut.dir_y
+@200
+-Choques
+@28
+tb_fisica_juego.dut.reb_x
+tb_fisica_juego.dut.reb_y
+tb_fisica_juego.gol
+@200
+-Paleta
+@28
+tb_fisica_juego.jugar
+@24
+tb_fisica_juego.pot[11:0]
+tb_fisica_juego.pala_y[3:0]
+[pattern_trace] 1
+[pattern_trace] 0

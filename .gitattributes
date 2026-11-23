@@ -1,0 +1,6 @@
+# Todos los archivos de texto con fin de línea Unix (LF), también en Windows
+* text=auto eol=lf
+*.sh  text eol=lf
+*.png binary
+*.pdf binary
+*.cls text eol=lf

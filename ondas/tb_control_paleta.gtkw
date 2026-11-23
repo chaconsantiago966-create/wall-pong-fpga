@@ -1,0 +1,35 @@
+[*] Wall-Pong: configuracion de GTKWave para tb_control_paleta
+[sst_width] 220
+[signals_width] 300
+[sst_expanded] 1
+[size] 1600 900
+@200
+-Entradas
+@28
+tb_control_paleta.clk
+tb_control_paleta.en_pala
+@24
+tb_control_paleta.pot[11:0]
+@200
+-Escala: fino = pot x 14 / 256
+@24
+tb_control_paleta.dut.por14[15:0]
+tb_control_paleta.dut.fino[7:0]
+@200
+-fino = objetivo x 16 + resto
+@24
+tb_control_paleta.dut.objetivo[3:0]
+tb_control_paleta.dut.resto[3:0]
+@200
+-Histeresis
+@28
+tb_control_paleta.dut.lejos_arriba
+tb_control_paleta.dut.lejos_abajo
+tb_control_paleta.dut.zona_segura
+tb_control_paleta.dut.carga
+@200
+-Salida
+@24
+tb_control_paleta.pala_y[3:0]
+[pattern_trace] 1
+[pattern_trace] 0

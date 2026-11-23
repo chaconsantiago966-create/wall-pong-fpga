@@ -1,0 +1,30 @@
+[*] Wall-Pong: configuracion de GTKWave para tb_generador_bit
+[sst_width] 220
+[signals_width] 300
+[sst_expanded] 1
+[size] 1600 900
+@200
+-Entradas
+@28
+tb_generador_bit.clk
+tb_generador_bit.rst
+tb_generador_bit.tx_activo
+tb_generador_bit.bit_actual
+@200
+-Contador de periodo (0..124)
+@24
+tb_generador_bit.dut.cnt[6:0]
+@28
+tb_generador_bit.fin_periodo
+@200
+-Comparadores y mux
+@28
+tb_generador_bit.dut.t0h
+tb_generador_bit.dut.t1h
+tb_generador_bit.dut.nivel
+@200
+-Salida
+@28
+tb_generador_bit.dout
+[pattern_trace] 1
+[pattern_trace] 0

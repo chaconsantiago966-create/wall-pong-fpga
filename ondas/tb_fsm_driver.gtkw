@@ -1,0 +1,30 @@
+[*] Wall-Pong: configuracion de GTKWave para tb_fsm_driver
+[sst_width] 220
+[signals_width] 300
+[sst_expanded] 1
+[size] 1600 900
+@200
+-Entradas
+@28
+tb_fsm_driver.clk
+tb_fsm_driver.rst
+tb_fsm_driver.start
+tb_fsm_driver.fin_periodo
+tb_fsm_driver.bit_done
+tb_fsm_driver.led_done
+tb_fsm_driver.latch_done
+@200
+-Estado: 0 IDLE 1 LOAD 2 SEND 3 NEXT 4 LATCH
+@24
+tb_fsm_driver.dut.estado[2:0]
+tb_fsm_driver.dut.siguiente[2:0]
+@200
+-Salidas
+@28
+tb_fsm_driver.listo
+tb_fsm_driver.load_piso
+tb_fsm_driver.tx_activo
+tb_fsm_driver.inc_led
+tb_fsm_driver.en_latch
+[pattern_trace] 1
+[pattern_trace] 0

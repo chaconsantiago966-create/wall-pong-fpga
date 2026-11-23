@@ -1,0 +1,13 @@
+[*] Wall-Pong: configuracion de GTKWave para tb_generador_tick_var
+[sst_width] 220
+[signals_width] 300
+[sst_expanded] 1
+[size] 1600 900
+@28
+tb_generador_tick_var.clk
+tb_generador_tick_var.rst
+@24
+tb_generador_tick_var.periodo[23:0]
+tb_generador_tick_var.dut.cuenta[23:0]
+@28
+tb_generador_tick_var.tick

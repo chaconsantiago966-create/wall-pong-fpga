@@ -1,0 +1,15 @@
+# Simulacion
+sim/
+*.vcd
+*.out
+# Vivado (se regenera con vivado/crear_proyecto.tcl)
+vivado/proyecto_*/
+*.jou
+*.log
+.Xil/
+# LaTeX
+reporte/*.aux
+reporte/*.log
+reporte/*.out
+reporte/*.bbl
+reporte/*.blg

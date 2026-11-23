@@ -1,0 +1,43 @@
+[*] Wall-Pong: configuracion de GTKWave para tb_driver_ws2812b
+[sst_width] 220
+[signals_width] 300
+[sst_expanded] 1
+[size] 1600 900
+@200
+-Control
+@28
+tb_driver_ws2812b.clk
+tb_driver_ws2812b.start
+tb_driver_ws2812b.listo
+@200
+-Estado: 0 IDLE 1 LOAD 2 SEND 3 NEXT 4 LATCH
+@24
+tb_driver_ws2812b.dut.u_fsm.estado[2:0]
+@200
+-LED que se envia y su color (G R B)
+@24
+tb_driver_ws2812b.led_idx[7:0]
+@22
+tb_driver_ws2812b.color[23:0]
+@200
+-Registro PISO
+@28
+tb_driver_ws2812b.dut.load_piso
+tb_driver_ws2812b.dut.shift_en
+@22
+tb_driver_ws2812b.dut.u_piso.piso[23:0]
+@28
+tb_driver_ws2812b.dut.bit_actual
+@200
+-Contadores
+@24
+tb_driver_ws2812b.dut.u_bits.cnt[4:0]
+tb_driver_ws2812b.dut.u_bit.cnt[6:0]
+tb_driver_ws2812b.dut.u_latch.cnt[14:0]
+@200
+-Salida
+@28
+tb_driver_ws2812b.dut.tx_activo
+tb_driver_ws2812b.dout
+[pattern_trace] 1
+[pattern_trace] 0
